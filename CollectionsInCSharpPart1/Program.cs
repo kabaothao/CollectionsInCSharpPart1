@@ -3,15 +3,51 @@
 
 
 using System;
+using System.Collections;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int[] arr = new int[10];
             Array.Resize(ref arr, 15); //create a new array and the old array will be destory
+
+            ArrayList al = new ArrayList(2);
+            al.Add(100);
+            Console.WriteLine(al.Capacity); //the value will double 
+            al.Add(200); al.Add(300); al.Add(400);
+            Console.WriteLine(al.Capacity);
+            al.Add(500);
+            Console.WriteLine(al.Capacity);
+
+            foreach (object obj in al) //this will print all of the values
+                Console.Write(obj + " ");
+            Console.WriteLine();
+
+            //if you want to add a value bween an array
+
+            al.Insert(3, 350);
+            foreach (object obj in al) //this will print all of the values
+                Console.Write(obj + " ");
+            Console.WriteLine();
+
+            //al.Remove(200);
+            al.RemoveAt(1);
+            foreach (object obj in al) //this will print all of the 
+                Console.Write(obj + " ");
+            Console.WriteLine();
+
+            Console.ReadLine();
+
+
+
+
+
+
+
+
         }
     }
 }
@@ -56,6 +92,6 @@ ArrayList - Variable Length
 We can insert items into the middle
 We can delete items from the middle
 
-
+start with 0 and then 4, 16, 18..etc. it will inrecement. 
 
  */
