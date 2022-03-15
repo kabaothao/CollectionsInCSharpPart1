@@ -14,6 +14,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             int[] arr = new int[10];
             Array.Resize(ref arr, 15); //create a new array and the old array will be destory
 
+            //When you pass a parameter then the initial capacity will start at that number. 
+
             ArrayList al = new ArrayList(2);
             al.Add(100);
             Console.WriteLine(al.Capacity); //the value will double 
@@ -26,12 +28,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 Console.Write(obj + " ");
             Console.WriteLine();
 
-            //if you want to add a value bween an array
+            //If you want to add a value between an array you can use the Insert
 
             al.Insert(3, 350);
             foreach (object obj in al) //this will print all of the values
                 Console.Write(obj + " ");
             Console.WriteLine();
+
+            //If you want to remova a value yu can use Remove. Or you can remove using the RemoveAt()
 
             //al.Remove(200);
             al.RemoveAt(1);
@@ -65,17 +69,17 @@ Array.Resize
  
  * Increasing the size 
  *  You can neer insert a value into the middle of the array
- *  we can nenver delete a value in the middle of the array
+ *  we can never delete a value in the middle of the array
 
 
-A collections is like an array and it is capable of storing multiple values, but has 3 functions. 
+A collections is like an array and it is capable of storing multiple values, but has 3 functions. These are available for collections.
 It can do all of these 3 things:
  * Increasing the size 
- *  You can neer insert a value into the middle of the array
- *  we can nenver delete a value in the middle of the array
+ *  You can never insert a value into the middle of the array
+ *  We can nenver delete a value in the middle of the array
  
 
-These are available for collections.
+
 
 
 Non-Generic Collections:
@@ -89,9 +93,10 @@ SortedList
 ArrayList
 hastable
 
-stack is not available, first you have to define and then consume. same for Queue
+Stack is not available, first you have to define and then consume. 
+Queue is not available, first you have to define and then consume.
 
-What is the difference between from Array and Arraylist:
+What is the difference between Array and Arraylist?
 Array - Fixed Length
 Not possible to insert items
 Not possible to delete items
@@ -100,6 +105,6 @@ ArrayList - Variable Length
 We can insert items into the middle
 We can delete items from the middle
 
-start with 0 and then 4, 16, 18..etc. it will inrecement. 
+Start with 0 and then 4, 16, 18..etc. it can auto resize.  
 
  */
