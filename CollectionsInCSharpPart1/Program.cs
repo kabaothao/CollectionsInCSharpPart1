@@ -53,6 +53,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
 }
 
 /*
+ Collections:
+
+-Dynamics Array
+
+int[] array = new int[10];
+
+Array.Resize
+ 
  * 3 things we cannot do for an Array:
  
  * Increasing the size 
