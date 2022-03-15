@@ -65,6 +65,9 @@ int[] array = new int[10];
 Once an array is declareed we cannot change the size of an array. If you need to change the size of an array you could use the Array.Resize method by caliing this method. 
 
 Array.Resize
+It takes 2 parameters, whose the size has to be increased and remember thats an output parameter. We would pass ref arr, and next I want to increase the size of 15.
+Array.Resize(ref arr, 15)
+
  
  * 3 things we cannot do for an Array:
  
