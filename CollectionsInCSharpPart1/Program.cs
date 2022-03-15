@@ -12,7 +12,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             int[] arr = new int[10];
-            Array.Resize(ref arr, 15); //create a new array and the old array will be destory
+            Array.Resize(ref arr, 15); //create a new array and going to destroy tthe old array. 
 
             //When you pass a parameter then the initial capacity will start at that number. 
 
@@ -62,6 +62,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 -Dynamics Array
 
 int[] array = new int[10];
+Once an array is declareed we cannot change the size of an array. If you need to change the size of an array you could use the Array.Resize method by caliing this method. 
 
 Array.Resize
  
